@@ -43,7 +43,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    /*background-image: url("../img/bg/gdynia_bw.jpg");*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 500px;
@@ -125,23 +124,13 @@ div.seria-ogolna {
 
 @media (min-width: 1024px) {
     h2 {
-        font-weight: bold;
         font-size: 2.1rem;
-        text-align: center;
-        padding-top: 3vh;
-        margin: 0 2vw;
-        border-bottom: 2px solid var(--first-bg-color);
     }
 }
 
 @media (min-width: 1440px) {
     h2 {
-        font-weight: bold;
         font-size: 2.2rem;
-        text-align: center;
-        padding-top: 3vh;
-        margin: 0 2vw;
-        border-bottom: 2px solid var(--first-bg-color);
     }
 }
 
@@ -157,31 +146,19 @@ h3 {
 
 @media (min-width: 600px) {
     h3 {
-        font-weight: bold;
-        margin: 3vh 2vw;
         font-size: 1.8rem;
-        text-align: center;
-        border-bottom: 1px solid var(--first-bg-color);
     }
 }
 
 @media (min-width: 1024px) {
     h3 {
-        font-weight: bold;
-        margin: 3vh 2vw;
         font-size: 1.9rem;
-        text-align: center;
-        border-bottom: 1px solid var(--first-bg-color);
     }
 }
 
 @media (min-width: 1440px) {
     h3 {
-        font-weight: bold;
-        margin: 3vh 2vw;
         font-size: 2rem;
-        text-align: center;
-        border-bottom: 1px solid var(--first-bg-color);
     }
 }
 
@@ -197,31 +174,19 @@ h4 {
 
 @media (min-width: 600px) {
     h4 {
-        font-weight: bold;
-        margin: 3vh 2vw;
         font-size: 1.6rem;
-        text-align: center;
-        border-bottom: 1px solid var(--first-bg-color);
     }
 }
 
 @media (min-width: 1024px) {
     h4 {
-        font-weight: bold;
-        margin: 3vh 2vw;
         font-size: 1.7rem;
-        text-align: center;
-        border-bottom: 1px solid var(--first-bg-color);
     }
 }
 
 @media (min-width: 1440px) {
     h4 {
-        font-weight: bold;
-        margin: 3vh 2vw;
         font-size: 1.8rem;
-        text-align: center;
-        border-bottom: 1px solid var(--first-bg-color);
     }
 }
 
@@ -237,7 +202,6 @@ p {
     p {
         margin: 2vh 5vw;
         font-size: 1.5rem;
-        text-align: justify;
     }
 }
 
@@ -245,7 +209,6 @@ p {
     p {
         margin: 2vh 4vw;
         font-size: 1.6rem;
-        text-align: justify;
     }
 }
 
@@ -253,18 +216,15 @@ p {
     p {
         margin: 1vh 2vw;
         font-size: 1.7rem;
-        text-align: justify;
     }
 }
 
 ul {
     margin-right: 4vw;
-    list-style: none;
 }
 
 div.item ul {
     margin-right: 0;
-    list-style: none;
 }
 
 div li a {
@@ -289,8 +249,6 @@ li:before {
 
 @media (min-width: 600px) {
     li {
-        font-size: 1.2rem;
-        text-align: justify;
         margin-left: 7vw;
     }
 }
@@ -305,7 +263,6 @@ li:before {
 @media (min-width: 1440px) {
     li {
         font-size: 1.6rem;
-        margin-left: 6vw;
     }
 }
 
@@ -394,16 +351,6 @@ h1.fade-in {
         font-size: 4rem;
     }
 }
-
-@media (min-width: 1200px) {}
-
-@media (min-width: 1440px) {}
-
-@media (orientation: landscape) {}
-
-@media (min-width: 360px) and (orientation: landscape) {}
-
-@media (min-width: 600px) and (orientation: landscape) {}
 
 /* language chooser */
 
@@ -503,14 +450,6 @@ h1.fade-in {
         font-size: 5rem;
     }
 }
-
-@media (min-width: 1440px) {}
-
-@media (orientation: landscape) {}
-
-@media (min-width: 360px) and (orientation: landscape) {}
-
-@media (min-width: 600px) and (orientation: landscape) {}
 
 
 @keyframes fadeInOut {
@@ -1014,8 +953,6 @@ section div.banner {
     }
 }
 
-@media (min-width: 1440px) {}
-
 /* arrow */
 
 div.arrow {
@@ -1084,25 +1021,7 @@ div.burger:hover {
     }
 }
 
-@media (min-width: 600px) {
-    div.burger {
-        display: block;
-    }
-}
-
 @media (min-width: 800px) {
-    div.burger {
-        display: none;
-    }
-}
-
-@media (min-width: 1024px) {
-    div.burger {
-        display: none;
-    }
-}
-
-@media (min-width: 1440px) {
     div.burger {
         display: none;
     }
@@ -1186,14 +1105,6 @@ nav > aside > ul li.active:hover {
     background-color: var(--main-bg-color);
 }
 
-@media (min-width: 360px) {}
-
-@media (min-width: 600px) {}
-
-@media (min-width: 1024px) {}
-
-@media (min-width: 1440px) {}
-
 @media (orientation: landscape) {
     nav > aside {
         top: -75vh;
@@ -1201,12 +1112,6 @@ nav > aside > ul li.active:hover {
 }
 
 @media (min-width: 360px) and (orientation: landscape) {
-    nav > aside {
-        top: -50vh;
-    }
-}
-
-@media (min-width: 600px) and (orientation: landscape) {
     nav > aside {
         top: -50vh;
     }
@@ -1303,14 +1208,6 @@ section > div nav ul li.nav-active:hover a {
 }
 
 @media (min-width: 360px) {
-    section > div nav {
-        display: none;
-
-    }
-
-}
-
-@media (min-width: 600px) {
     section > div nav {
         display: none;
 
@@ -1462,8 +1359,6 @@ nav.e25-menu div.active-menu {
     }
 }
 
-@media (min-width: 1440px) {}
-
 /* inside product menu */
 
 nav.e25-menu {
@@ -1574,9 +1469,6 @@ nav.e25-menu div.active-menu {
 section main {
     max-width: 1280px;
     margin: 1vh auto 1vh auto;
-    /*background-color: var(--basic-bg-color);
-	border-radius: 5px;
-	box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.6);*/
     padding: 2vh 0;
 }
 
@@ -1590,8 +1482,6 @@ section.clients {
 }
 
 section.clients > div {
-    /*background-color: var(--main-bg-color);
-    background: linear-gradient(45deg, var(--gradient-first-color) 19%, var(--gradient-second-color) 64%, var(--gradient-third-color) 100%);*/
     background-color: transparent;
     padding: 20px;
     text-transform: uppercase;
@@ -1646,8 +1536,6 @@ section.clients > div > p {
 .files1 {
     width: 80%;
     margin: 0 auto;
-    /*background-color: var(--second-font-color);*/
-    /*background: linear-gradient(45deg, var(--gradient-fourth-color) 0%, var(--gradient-fifth-color) 79%, var(--gradient-sixth-color) 100%);*/
     -webkit-border-bottom-right-radius: 9px;
     -webkit-border-bottom-left-radius: 9px;
     -moz-border-radius-bottomright: 9px;
@@ -1660,7 +1548,6 @@ section.clients > div > p {
     -moz-border-radius-topleft: 9px;
     border-top-right-radius: 9px;
     border-top-left-radius: 9px;
-    /*border: solid 2px black;*/
 }
 
 .files1 h3 {
@@ -1672,7 +1559,6 @@ section.clients > div > p {
 
 .files1__wrap {
     background: transparent;
-    /*linear-gradient(45deg, var(--gradient-first-color) 0%, var(--gradient-second-color) 79%, var(--gradient-third-color) 100%);*/
     display: flex;
     justify-content: space-around;
     align-items: space-around;
@@ -1681,7 +1567,6 @@ section.clients > div > p {
     column-gap: 1vw;
     width: 100%;
     margin: 0 auto;
-    /*border-top: solid 2px black;*/
     padding: 1vh 0;
 }
 
@@ -1689,7 +1574,6 @@ section.clients > div > p {
     display: flex;
     justify-content: center;
     flex-basis: 30%;
-    /*border: solid 2px black;*/
     -webkit-border-bottom-right-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-bottomright: 5px;
@@ -1789,8 +1673,6 @@ section.certificates div.cert-wrap {
 
 section.certificates div.cert-wrap > div {
     position: relative;
-    /*background-color: var(--first-bg-color);
-    background: linear-gradient(45deg, var(--gradient-first-color) 19%, var(--gradient-second-color) 64%, var(--gradient-third-color) 100%);*/
     padding: 20px;
     text-transform: uppercase;
     margin: 20px auto;
@@ -1815,8 +1697,6 @@ section.certificates div.cert-wrap > div:hover {
 section.certificates div.cert-wrap img {
     text-align: center;
     transform: scale(0.9);
-    /*-webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.78);
-    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.78);*/
     visibility: visible;
     transition: 0.3s;
 }
@@ -1857,7 +1737,6 @@ section.certificates div.cert-wrap p.p-text {
     display: flex;
     justify-content: center;
     flex-basis: 70%;
-    /*border: solid 2px var(--first-bg-color);*/
     -webkit-border-bottom-right-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-bottomright: 5px;
@@ -2035,8 +1914,6 @@ div.contact i {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 1.2rem;
-    /*background-color: var(--second-bg-color);*/
-    /*color: var(--second-font-color);*/
 }
 
 div.contact {
@@ -2080,7 +1957,6 @@ div.online-contact {
 
 div.online-contact {
     border-left: none;
-    /*border-top: solid 2px var(--main-bg-color);*/
     align-self: flex-start;
 }
 
@@ -2128,10 +2004,7 @@ main .fas {
 .map-wrap {
     display: flex;
     flex-direction: column;
-    /*background-color: var(--second-bg-color);*/
-    /*border-top: solid 2px var(--main-bg-color);*/
     font-size: 1.9rem;
-    /*color: var(--second-font-color);*/
 }
 
 .map-wrap p,
@@ -2189,8 +2062,6 @@ div.map iframe {
         flex-direction: column;
         flex-wrap: wrap;
         font-size: 1.2rem;
-        /*background-color: var(--second-bg-color);*/
-        /*color: var(--second-font-color);*/
     }
 
     div.contact {
@@ -2202,7 +2073,6 @@ div.map iframe {
     }
 
     div.online-contact {
-        /*border-top: solid 2px var(--main-bg-color);*/
         border-left: none;
     }
 
@@ -2227,8 +2097,6 @@ div.map iframe {
         flex-direction: column;
         flex-wrap: wrap;
         font-size: 1.5rem;
-        /*background-color: var(--second-bg-color);*/
-        /*color: var(--second-font-color);*/
     }
 
     div.contact {
@@ -2241,7 +2109,6 @@ div.map iframe {
 
     div.online-contact {
         border-top: none;
-        /*border-left: solid 2px var(--main-bg-color);*/
     }
 
     div.online-contact {
@@ -2254,14 +2121,8 @@ div.map iframe {
     div.contact,
     div.contact p,
     div.contact i {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         flex-direction: row;
-        flex-wrap: wrap;
         font-size: 1.7rem;
-        /*background-color: var(--second-bg-color);*/
-        /*color: var(--second-font-color);*/
     }
 }
 
@@ -2270,14 +2131,7 @@ div.map iframe {
     div.contact,
     div.contact p,
     div.contact i {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
         font-size: 1.9rem;
-        /*background-color: var(--second-bg-color);*/
-        /*color: var(--second-font-color);*/
     }
 }
 
