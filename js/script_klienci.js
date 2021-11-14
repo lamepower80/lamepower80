@@ -57,23 +57,23 @@ window.addEventListener("scroll", showArrow);
 //banner slider
 const slideList = [
   {
-    img: "img/banner/1n.jpg",
+    img: "img/banner/1n.webp",
     text: "",
   },
   {
-    img: "img/banner/2n.jpg",
+    img: "img/banner/2n.webp",
     text: "",
   },
   {
-    img: "img/banner/3n.jpg",
+    img: "img/banner/3n.webp",
     text: "",
   },
   {
-    img: "img/banner/4n.jpg",
+    img: "img/banner/4n.webp",
     text: "",
   },
   {
-    img: "img/banner/5n.jpg",
+    img: "img/banner/5n.webp",
     text: "",
   },
 ];
@@ -102,6 +102,8 @@ const changeDot = () => {
   dots[active].classList.add("dots-active");
 };
 
+setTimeout(changeDot, 9000);
+
 const changeSlide = () => {
   active++;
   if (active == slideList.length) {
@@ -115,6 +117,8 @@ const changeSlide = () => {
   h1Img.textContent = slideList[active].text;
   changeDot();
 };
+
+setTimeout(changeSlide, 9000);
 
 const anim = () => {
   image.style.animation = "none";

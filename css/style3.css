@@ -505,7 +505,7 @@ header {
     flex-basis: 12vh;
     position: relative;
     background-color: var(--fourth-bg-color);
-    background-image: url("../img/Logo_Sealab-1.jpg");
+    background-image: url("../img/Logo_Sealab-1.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto 70%;
