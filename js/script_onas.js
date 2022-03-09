@@ -58,28 +58,22 @@ window.addEventListener("scroll", showArrow);
 const slideList = [
   {
     img: "img/banner/1n.webp",
-    text: "",
   },
   {
     img: "img/banner/2n.webp",
-    text: "",
   },
   {
     img: "img/banner/3n.webp",
-    text: "",
   },
   {
     img: "img/banner/4n.webp",
-    text: "",
   },
   {
     img: "img/banner/5n.webp",
-    text: "",
   },
 ];
 
 const image = document.querySelector("img.banner-slider");
-const h1Img = document.querySelector("h1.h1-slider");
 const dots = [...document.querySelectorAll(".dots span")];
 const btn1 = document.querySelector(".dots .one");
 const btn2 = document.querySelector(".dots .two");
@@ -114,7 +108,6 @@ const changeSlide = () => {
   t2.fromTo(image, time / 3000, { opacity: 0 }, { opacity: 1 })
     .fromTo(image, time / 3000, { opacity: 1 }, { opacity: 1 })
     .fromTo(image, time / 3000, { opacity: 1 }, { opacity: 0 });
-  h1Img.textContent = slideList[active].text;
   changeDot();
 };
 
@@ -130,7 +123,6 @@ const anim = () => {
 const slideImg1 = () => {
   active = 0;
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -140,7 +132,6 @@ const slideImg1 = () => {
 const slideImg2 = () => {
   active = 1;
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -150,7 +141,6 @@ const slideImg2 = () => {
 const slideImg3 = () => {
   active = 2;
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -160,7 +150,6 @@ const slideImg3 = () => {
 const slideImg4 = () => {
   active = 3;
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -170,7 +159,6 @@ const slideImg4 = () => {
 const slideImg5 = () => {
   active = 4;
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -205,7 +193,6 @@ const keyChange = (e) => {
     active = slideList.length - 1;
   }
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -214,56 +201,6 @@ const keyChange = (e) => {
 
 window.addEventListener("keydown", keyChange);
 
-//animation button
-/*
-const animationButton = document.querySelector(".animation-container");
-const currentAnimationFlag = localStorage.getItem("animationFlag");
-const animationState = document.querySelector(".animation-state");
-
-if (currentAnimationFlag === "false") {
-  animationButton.classList.remove("active");
-  animationState.classList.remove("active");
-  animationState.style.color = "LawnGreen";
-  if (document.body.classList.contains("en")) {
-    animationState.innerHTML = "on";
-  } else {
-    animationState.innerHTML = "wł";
-  }
-} else {
-  animationButton.classList.add("active");
-  animationState.classList.add("active");
-  animationState.style.color = "DarkRed";
-  if (document.body.classList.contains("en")) {
-    animationState.innerHTML = "off";
-  } else {
-    animationState.innerHTML = "wył";
-  }
-}
-
-animationButton.addEventListener("click", () => {
-  if (animationButton.classList.contains("active")) {
-    localStorage.setItem("animationFlag", "false");
-    animationButton.classList.remove("active");
-    animationState.classList.remove("active");
-    animationState.style.color = "LawnGreen";
-    if (document.body.classList.contains("en")) {
-      animationState.innerHTML = "on";
-    } else {
-      animationState.innerHTML = "wł";
-    }
-  } else if (!animationButton.classList.contains("active")) {
-    animationButton.classList.add("active");
-    localStorage.setItem("animationFlag", "true");
-    animationState.style.color = "DarkRed";
-    if (document.body.classList.contains("en")) {
-      animationState.innerHTML = "off";
-    } else {
-      animationState.innerHTML = "wył";
-    }
-    animationState.classList.add("active");
-  }
-  window.location.reload(true);
-}); */
 //cookies
 const cookieContainer = document.querySelector(".cookie-container");
 const cookieContainerBtn = document.querySelector(".cookie-container-button");
@@ -278,144 +215,6 @@ setTimeout(() => {
     cookieContainer.classList.add("active");
 }, 2000);
 
-//animations
-/*
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
-const p = document.querySelectorAll("p.text");
-
-if (currentAnimationFlag === "false") {
-  p.forEach((item) =>
-    gsap.fromTo(
-      item,
-      { y: "+=90", opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        stagger: 0.2,
-        duration: 1,
-        ease: "easeInOut",
-        scrollTrigger: {
-          trigger: item,
-          start: "top 90%",
-        },
-      }
-    )
-  );
-} else {
-  p.forEach((item) => {
-    gsap.set(item, { opacity: 1 });
-  });
-}
-
-const li = document.querySelectorAll("li.text");
-if (currentAnimationFlag === "false") {
-  li.forEach((item) =>
-    gsap.fromTo(
-      item,
-      { y: "+=90", opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        stagger: 0.2,
-        duration: 1,
-        ease: "easeInOut",
-        scrollTrigger: {
-          trigger: item,
-          start: "top 90%",
-        },
-      }
-    )
-  );
-} else {
-  li.forEach((item) => {
-    gsap.set(item, { opacity: 1 });
-  });
-}
-
-const h2 = document.querySelectorAll("h2");
-if (currentAnimationFlag === "false") {
-  let text = "";
-  h2.forEach((item) => {
-    text = item.textContent;
-    gsap.fromTo(
-      item,
-      1.4,
-      {
-        text: "",
-        opacity: 0,
-      },
-      {
-        text: text,
-        opacity: 1,
-        scrollTrigger: {
-          trigger: item,
-          start: "top 90%",
-        },
-      }
-    );
-  });
-} else {
-  h2.forEach((item) => {
-    gsap.set(item, { opacity: 1 });
-  });
-}
-
-const h3 = document.querySelectorAll("h3");
-let text2 = "";
-if (currentAnimationFlag === "false") {
-  h3.forEach((item) => {
-    text2 = item.textContent;
-    gsap.fromTo(
-      item,
-      1.4,
-      {
-        text: "",
-        opacity: 0,
-      },
-      {
-        text: text2,
-        opacity: 1,
-        scrollTrigger: {
-          trigger: item,
-          start: "top 90%",
-        },
-      }
-    );
-  });
-} else {
-  h3.forEach((item) => {
-    gsap.set(item, { opacity: 1 });
-  });
-}
-
-const h4 = document.querySelectorAll("h4");
-if (currentAnimationFlag === "false") {
-  let text3 = "";
-  h4.forEach((item) => {
-    text3 = item.textContent;
-    gsap.fromTo(
-      item,
-      1.4,
-      {
-        text: "",
-        opacity: 0,
-      },
-      {
-        text: text3,
-        opacity: 1,
-        scrollTrigger: {
-          trigger: item,
-          start: "top 90%",
-        },
-      }
-    );
-  });
-} else {
-  h3.forEach((item) => {
-    gsap.set(item, { opacity: 1 });
-  });
-}
-*/
 /* rodo */
 
 const blur = document.querySelector(".blur");

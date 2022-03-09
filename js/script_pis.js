@@ -53,28 +53,22 @@ window.addEventListener("scroll", showArrow);
 const slideList = [
   {
     img: "img/banner/1n.webp",
-    text: "",
   },
   {
     img: "img/banner/2n.webp",
-    text: "",
   },
   {
     img: "img/banner/3n.webp",
-    text: "",
   },
   {
     img: "img/banner/4n.webp",
-    text: "",
   },
   {
     img: "img/banner/5n.webp",
-    text: "",
   },
 ];
 
 const image = document.querySelector("img.banner-slider");
-const h1Img = document.querySelector("h1.h1-slider");
 const dots = [...document.querySelectorAll(".dots span")];
 const btn1 = document.querySelector(".dots .one");
 const btn2 = document.querySelector(".dots .two");
@@ -109,7 +103,6 @@ const changeSlide = () => {
   t2.fromTo(image, time / 3000, { opacity: 0 }, { opacity: 1 })
     .fromTo(image, time / 3000, { opacity: 1 }, { opacity: 1 })
     .fromTo(image, time / 3000, { opacity: 1 }, { opacity: 0 });
-  h1Img.textContent = slideList[active].text;
   changeDot();
 };
 
@@ -125,7 +118,6 @@ const anim = () => {
 const slideImg1 = () => {
   active = 0;
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -135,7 +127,6 @@ const slideImg1 = () => {
 const slideImg2 = () => {
   active = 1;
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -145,7 +136,6 @@ const slideImg2 = () => {
 const slideImg3 = () => {
   active = 2;
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -155,7 +145,6 @@ const slideImg3 = () => {
 const slideImg4 = () => {
   active = 3;
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -165,7 +154,6 @@ const slideImg4 = () => {
 const slideImg5 = () => {
   active = 4;
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();
@@ -200,7 +188,6 @@ const keyChange = (e) => {
     active = slideList.length - 1;
   }
   image.src = slideList[active].img;
-  h1Img.textContent = slideList[active].text;
   anim();
   changeDot();
   myStopFunction();

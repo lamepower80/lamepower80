@@ -84,7 +84,8 @@ body.dark {
     color: yellow;
 }
 
-h2 {
+h2,
+h1 {
     font-weight: bold;
     font-size: 1.8rem;
     text-align: center;
@@ -112,7 +113,9 @@ div.seria-ogolna {
 @media (min-width: 360px) {}
 
 @media (min-width: 600px) {
-    h2 {
+
+    h2,
+    h1 {
         font-weight: bold;
         font-size: 2rem;
         text-align: center;
@@ -123,13 +126,17 @@ div.seria-ogolna {
 }
 
 @media (min-width: 1024px) {
-    h2 {
+
+    h2,
+    h1 {
         font-size: 2.1rem;
     }
 }
 
 @media (min-width: 1440px) {
-    h2 {
+
+    h2,
+    h1 {
         font-size: 2.2rem;
     }
 }
@@ -896,7 +903,7 @@ section div.banner {
             opacity: 0;
         }
 
-        1%{
+        1% {
             opacity: 0;
         }
 
@@ -916,7 +923,7 @@ section div.banner {
             opacity: 0.6;
         }
 
-        99%{
+        99% {
             opacity: 0;
         }
 
@@ -957,7 +964,7 @@ section div.banner {
 
 div.arrow {
     position: fixed;
-    bottom: calc(15px + 4vh);
+    bottom: 4.5vh;
     right: 30px;
     font-size: 4rem;
     line-height: 2rem;
