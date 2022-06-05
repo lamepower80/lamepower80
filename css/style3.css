@@ -1931,6 +1931,20 @@ div.contact {
     margin: 0 auto 0 auto;
 }
 
+p.contact-text {
+    text-decoration: underline;
+    margin: 1vh 0 0.5vh 0;
+}
+
+p.contact-text-name {
+    margin: 0.5vh 0 0.5vh 0;
+    font-weight: bold;
+}
+
+p.contact-text-data {
+    margin: 0 0 0 1vw;
+}
+
 div.adress,
 div.online-contact {
     width: 90%;
@@ -2063,7 +2077,7 @@ div.map iframe {
     div.contact,
     div.contact p,
     div.contact i {
-        display: flex;
+        display: block;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
@@ -2077,6 +2091,25 @@ div.map iframe {
         justify-content: space-around;
         width: 100%;
         margin: 0 auto 0 auto;
+    }
+
+    p.contact-text {
+        display: block;
+        text-decoration: underline;
+        margin: 1vh 0 0.5vh 0;
+        justify-content: flex-start;
+    }
+
+    p.contact-text-name {
+        display: block;
+        margin: 0.5vh 0 0.5vh 0;
+        font-weight: bold;
+        justify-content: flex-start;
+    }
+
+    p.contact-text-data {
+        display: block;
+        margin: 0 0 0 1vw;
     }
 
     div.online-contact {
@@ -2098,7 +2131,7 @@ div.map iframe {
     div.contact,
     div.contact p,
     div.contact i {
-        display: flex;
+        display: block;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
@@ -2112,6 +2145,22 @@ div.map iframe {
         justify-content: space-around;
         width: 100%;
         margin: 0 auto 0 auto;
+    }
+
+    p.contact-text {
+        text-decoration: underline;
+        margin: 1vh 0 0.5vh 0;
+        justify-content: flex-start;
+    }
+
+    p.contact-text-name {
+        margin: 0.5vh 0 0.5vh 0;
+        font-weight: bold;
+        justify-content: flex-start;
+    }
+
+    p.contact-text-data {
+        margin: 0 0 0 1vw;
     }
 
     div.online-contact {

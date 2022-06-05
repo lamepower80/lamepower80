@@ -1,0 +1,5 @@
+RewriteCond %{HTTP_HOST} ^www.sealab.pl(.*) [NC]
+RewriteRule ^(.*)$ http://sealab.pl/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ http://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
