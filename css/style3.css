@@ -2719,3 +2719,7 @@ div.section-wrap {
 .rodo-button:hover {
     background-color: var(--eight-bg-color);
 }
+
+.hidden{
+    z-index: -100;
+}
