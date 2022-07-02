@@ -391,6 +391,7 @@ h1.fade-in {
     height: 12vw;
     width: 12vw;
     opacity: 0;
+    border-radius: 50%;
     animation: fadeIn2 1.6s 2s ease-in forwards;
 }
 
