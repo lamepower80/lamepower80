@@ -18,6 +18,7 @@
     <meta name="keywords" content="pożar, alarm, system przeciwpożarowy, brezpieczeństwo, detekcja gazu">
     <meta name="author" content="Krzysztof Gąsiorowski">
     <script src="https://kit.fontawesome.com/1db7a758f4.js" rel="preconnect" crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#EEE">
     <link rel="stylesheet" href="css/stylemini.css">
     <link rel="canonical" href="http://sealab.pl/">
     <script type="application/ld+json">
@@ -58,29 +59,7 @@
 </head>
 
 <body>
-
-    <div class="splash">
-        <h2 class="fade-in min200">Witaj na stronie / Welcome on page</h2>
-        <h2 class="max200 fade-in">Witaj / Welcome</h2>
-        <h2 class="fade-in">Sealab Sp. z o.o.</h2>
-    </div>
-
-    <div class="lang-chooser">
-        <h2 class="fade-in2">Wybierz język / Choose language</h2>
-        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from
-            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from
-            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-        <div class="lang-img-wrap">
-            <div class="lang-img pl"><a href="onas.html"><img src="img/lang/poland.webp" alt="polska flaga"></a>
-            </div>
-            <div class="lang-img eng"><a href="onasEng.html"><img src="img/lang/united-kingdom.webp"
-                        alt="angielska flaga"></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="hidden">
+    <div class="hidden" style="display: none;">
         <div class="blur"></div>
         <div class="burger">
             <i class="fas fa-bars show"></i><i class="fas fa-times"></i>
@@ -279,8 +258,8 @@
                         pełne bezpieczeństwo użytkowania i pozwalają zarządzać ryzykiem przedsiębiorstwom wielu branż.
                     </p>
                     <div class="banner">
-                        <img data-src="./img/banner/1n.webp" class="lazyload"
-                            alt="realizacje systemu przeciwpożarowego - Sealab" class="banner-slider">
+                        <img src="./img/banner/1n.webp" alt="realizacje systemu przeciwpożarowego - Sealab"
+                            class="banner-slider">
                         <div class="banner-wrap">
                             <div class="dots">
                                 <span class="one dots-active"></span>
@@ -525,9 +504,44 @@
                 </a>
             </div>
         </footer>
+        <div class="cookie-container">
+            <p class="cookie-container-text">Używamy ciasteczek (cookies) na tej stronie. Ciasteczka to małe pliki
+                tekstowe,
+                które mogą być używane do zapewnienia użytkownikowi ciekawszych wrażeń. Więcej o naszej polityce
+                używania
+                ciasteczek oraz o polityce zarządzania danymi osobowymi znajdziesz poniżej.</p>
+            <div class="button__container-cookie">
+                <button class="rodo">Więcej informacji</button>
+                <button class="cookie-container-button">Akceptuję</button>
+            </div>
+        </div>
     </div>
 
+    <div class="splash">
+        <h2 class="fade-in min200">Witaj na stronie / Welcome on page</h2>
+        <h2 class="max200 fade-in">Witaj / Welcome</h2>
+        <h2 class="fade-in">Sealab Sp. z o.o.</h2>
+    </div>
+
+    <div class="lang-chooser">
+        <h2 class="fade-in2">Wybierz język / Choose language</h2>
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+        <div class="lang-img-wrap">
+            <div class="lang-img pl"><a href="onas.html"><img src="img/lang/poland.webp" alt="polska flaga"></a>
+            </div>
+            <div class="lang-img eng"><a href="onasEng.html"><img src="img/lang/united-kingdom.webp"
+                        alt="angielska flaga"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/1db7a758f4.js" crossorigin="anonymous" async></script>
 </body>
 
 </html>

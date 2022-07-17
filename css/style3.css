@@ -373,6 +373,7 @@ h1.fade-in {
     color: white;
     text-align: center;
     line-height: 20vh;
+    display: block !important;
 }
 
 .lang-img-wrap {
@@ -2722,5 +2723,5 @@ div.section-wrap {
 }
 
 .hidden{
-    z-index: -100;
+    display: none !important;
 }
