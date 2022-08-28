@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
 const lang = document.querySelector(".lang-chooser");
 const btnPl = document.querySelector(".pl img");
 const btnEng = document.querySelector(".eng img");
+const hidden = document.querySelector(".hidden");
+const mainWrapper = document.querySelector(".main-wrapper");
 
 btnPl.addEventListener("click", () => {
   lang.style.display = "none";

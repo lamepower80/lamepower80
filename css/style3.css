@@ -2723,5 +2723,14 @@ div.section-wrap {
 }
 
 .hidden{
-    display: none !important;
+    position: fixed;
+    top: 120vh;
+    z-index: -100;
+}
+
+.main-wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    z-index: -1;
 }
