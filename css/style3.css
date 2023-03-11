@@ -1481,6 +1481,66 @@ section main {
     padding: 2vh 0;
 }
 
+.autoworld{
+    color: rgb(0,99,37);
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+}  
+    @media (min-width: 600px) {
+        .autoworld {
+            font-size: 1.5rem;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .autoworld {
+            font-size: 1.6rem;
+        }
+    }
+    
+    @media (min-width: 1440px) {
+        .autoworld {
+            font-size: 1.7rem;
+        }
+    }
+
+.autoworld:hover{
+    color: rgb(0, 135, 49);
+}
+
+.broszura{
+    color: rgb(0, 14, 171);
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+}  
+    @media (min-width: 600px) {
+        .broszura {
+            font-size: 1.5rem;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .broszura {
+            font-size: 1.6rem;
+        }
+    }
+    
+    @media (min-width: 1440px) {
+        .broszura {
+            font-size: 1.7rem;
+        }
+    }
+
+.broszura:hover{
+    color: rgb(0, 21, 255);
+}
+
 /* klienci */
 
 section.clients {
